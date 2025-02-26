@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&display=swap');
+
+:root {
+  --background-color: #050618;
+  --white: #F1F1F1;
+  --white-ice: #F1F1F1;
+  /* --highlight-color: #9B59B6; */
+  --highlight-color: #9acddc;
+
+
+  --font-titles: "Fugaz One", serif;
+  --font-text: "Lato", serif;
+
+  --24px: 1.5rem;
+  --16px: 1rem;
+  --12px: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #F1F1F1;
+}
+
+.row,
+.row>*,
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  /* background: linear-gradient(135deg, #1d1539, #18132f, #20183c); */
+  background: #070429;
+  height: 100vh;
+
+  padding: 1rem;
+
+  overflow: hidden;
+
+}
+
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  flex: 1;
+}
+
+/* Para nao esquecer do padrao */
+.lato-thin {
+  font-family: "Lato", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Largura da scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Cor do trilho */
+::-webkit-scrollbar-track {
+  background: #1d1539;
+  border-radius: 10px;
+}
+
+/* Puxador */
+::-webkit-scrollbar-thumb {
+  background: #9acddc;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+/* Hover do puxador */
+::-webkit-scrollbar-thumb:hover {
+  background: #6b57a5;
+}
+
+/* Remove as setinhas */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.background-glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}

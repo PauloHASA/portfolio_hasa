@@ -1,0 +1,303 @@
+.body-aboutMe {
+  height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+
+.back-to-pages,
+.back-to-pages a {
+  display: flex;
+  gap: 4px;
+}
+
+.back-to-pages a,
+.back-to-pages a p {
+  font-family: var(--font-text);
+  font-size: var(--16px);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--white);
+}
+
+.back-to-pages a p {}
+
+.back-to-pages a:hover {
+  color: var(--highlight-color);
+  font-size: 1.05rem;
+}
+
+.col-txt-aboutMe {
+  justify-content: center;
+}
+
+.col-txt-aboutMe h1 {
+  font-family: var(--font-titles);
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--white);
+
+
+}
+
+.col-txt-aboutMe .border-line {
+  border: 2px solid var(--highlight-color);
+  width: 256px;
+  margin-bottom: 16px;
+
+}
+
+.col-txt-aboutMe p {
+  font-family: var(--font-text);
+  font-size: var(--16px);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--white);
+
+  max-width: 545px;
+  margin-bottom: 6px;
+  padding-left: 12px;
+
+}
+
+.col-txt-aboutMe footer {
+  max-width: 545px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 12px;
+  margin-top: 24px;
+
+}
+
+.col-txt-aboutMe footer button {
+  background-color: transparent;
+  border: none;
+
+  font-family: var(--font-text);
+  font-size: var(--16px);
+  font-weight: 500;
+  font-style: normal;
+  color: #070429;
+
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 6px;
+
+}
+
+.col-txt-aboutMe footer button.see-more {
+  background: var(--highlight-color);
+  border: 2px solid var(--highlight-color);
+}
+
+.col-txt-aboutMe footer button.see-projects {
+  border: 2px solid var(--highlight-color);
+  color: var(--highlight-color);
+}
+
+.col-txt-aboutMe footer button.see-more:hover,
+.col-txt-aboutMe footer button.see-projects:hover {
+  height: auto;
+  padding: 8px 14px;
+
+}
+
+
+.col-txt-aboutMe footer button.see-more:hover {
+  border: 2px solid var(--highlight-color);
+
+  color: var(--highlight-color);
+  background: transparent;
+}
+
+.col-txt-aboutMe footer button.see-projects:hover {
+  border: 2px solid var(--highlight-color);
+
+  color: var(--white);
+  background: var(--highlight-color);
+}
+
+.body-page-aboutMe {
+  height: calc(100vh - 118px);
+  overflow: auto;
+
+  .full-page {
+    height: 100%;
+  }
+
+  .full-page .col-8 {
+    padding-top: 72px;
+  }
+
+  .full-page .col-8 .row {
+    gap: 12px;
+  }
+}
+
+.my-skills {
+  margin-bottom: 158px;
+
+  .body-mySkills {
+    display: flex;
+    
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    .box {
+      height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.2);
+      /* Adicionando fundo leve para destacar */
+      border-radius: 8px;
+      transition: transform 0.4s ease-in-out, margin 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    padding: 10px;
+    }
+
+    .box:hover {
+      transform: scale(1.2);
+      z-index: 1;
+      margin: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+      .box img {
+        transform: scale(1.2);
+
+      }
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      /* Ajuste o tamanho da imagem dentro da box */
+    }
+  }
+}
+
+
+.experience-box {
+  min-height: 400px;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+
+  header {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 12px;
+  }
+
+  header .logo {
+    width: 40px;
+  }
+
+  header .logo img {
+    border-radius: 12px;
+
+  }
+
+  header .name {
+    width: 200px;
+  }
+}
+
+header .logo,
+header .logo img,
+header .name,
+header .name img {
+  height: 40px;
+
+}
+
+.roma-experience .name {
+  background: #F1F1F1;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.title-aboutMe {
+  margin-bottom: 2rem;
+  font-family: var(--font-titles);
+  font-weight: 200;
+
+}
+
+.skills-level{
+
+  section{
+
+    margin-bottom: 1rem;
+    .row-skillsLevel{
+
+      .col{
+    
+        h2{
+          font-family: var(--font-titles);
+          font-size: 1.5rem;
+          margin-bottom:0.5rem;
+    
+          display: flex;
+          align-items: center;
+          gap: 12px;
+    
+          button{
+            background: transparent;
+            border: none;
+          }
+        }
+    
+        .progress{
+    
+          height: 0.7rem;
+    
+          .progress-bar{
+            background-color: var(--highlight-color);
+          }
+        }
+      }
+    
+    }
+    .open{
+      margin-top: 0.5rem;
+      h3{
+        font-family: var(--font-text);
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+
+
+.default-icon-skillsLevel{
+  height: 60px;
+  width: 60px;
+  padding: 8px;
+
+  img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+}

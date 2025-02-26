@@ -1,0 +1,291 @@
+.main-landingPage {
+
+  .row{
+    overflow-y: auto;
+    overflow-x: hidden;
+
+  }
+
+  .principal-container,
+  .nav-principal {
+    display: flex;
+    align-items: center;
+  }
+
+
+  section {}
+
+  section h4 {
+    font-family: var(--font-text);
+    font-size: 3rem;
+    color: var(--white);
+  }
+
+  section h4 span {
+    font-family: var(--font-titles);
+    font-size: 4rem;
+
+  }
+
+  section .animation-txt {}
+
+  section .animation-txt p {
+    font-family: var(--font-text);
+    font-size: 2rem;
+    color: var(--white);
+  }
+
+  section .animation-txt p span {
+    font-family: var(--font-titles);
+
+    color: var(--highlight-color);
+  }
+
+  section .border-line {
+    border: 2px solid var(--highlight-color);
+    width: 640px;
+  }
+
+
+}
+
+/* CubeFlipAnimation.css */
+.animation-txt {
+  perspective: 1000px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-txt p {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  opacity: 0;
+  transform-origin: bottom center;
+  animation: cubeFlip 9s ease-in-out infinite;
+  backface-visibility: hidden;
+}
+
+.animation-txt p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animation-txt p:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.animation-txt p:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes cubeFlip {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+
+  10% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+
+  40% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+}
+
+.tooltip-container {}
+
+/* Estilo do Tooltip */
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+
+  right: 46px;
+  bottom: -2px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+
+/* Estilo do Tooltip */
+.tooltip-text::after {
+  /* content necessário para a criação de um elemento vazio */
+  content: "";
+
+  width: 0;
+  height: 0;
+
+  /* position: absolute para manipularmos a posição da seta */
+  position: absolute;
+
+  right: -11px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid rgba(0, 0, 0, 0.7);
+
+}
+
+/* Exibe o tooltip quando o usuário passa o mouse sobre o Link */
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Efeito de hover no ícone (opcional) */
+.icon-hover {
+  display: none;
+}
+
+.tooltip-container:hover .icon-hover {
+  display: inline-block;
+}
+
+
+.img-parallax{
+  
+}
+
+.row-fullpage{
+      height: calc(100vh - 100px);
+
+
+  .fullPage{
+    height: 70%;
+  }
+
+  .fullPage.homePage{
+    position: relative;
+  }
+
+  .fullPage.homePage,
+  .fullPage.aboutMe{
+    display: flex;
+    align-items: center;
+  }
+
+  .fullPage.aboutMe{
+
+    .row{
+      width: 100%;
+    }
+  }
+}
+
+
+.robot-spline{
+  position: absolute;
+  right: -24rem;
+  width: 102rem;
+  height: 70rem;
+}
+
+.box-imgDev{
+  position: relative;
+
+  .border{
+    position: absolute;
+    top: -122px;
+    left: 3px;
+    width: 368px;
+    height: 445px;
+    border: 8px solid var(--highlight-color) !important;
+
+  }
+  img{
+      width: 368px;
+      height: auto;
+      position: absolute;
+      top: -200px;
+      left: 34px;
+  }
+}
+
+.img-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+
+  img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+
+    padding: 12px;
+  }
+}
+
+.default-text-project{
+  padding-left: 1rem;
+  h4{
+    font-family: var(--font-titles);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  p{
+    font-family: var(--font-text);
+    font-size: 1rem;
+
+  }
+
+  a{
+    font-family: var(--font-text);
+    font-size: var(--16px);
+    font-weight: 500;
+    font-style: normal;
+    color: #070429;
+    width: 154px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 6px;
+    background: var(--highlight-color);
+
+  }
+
+  a:hover{
+    background: transparent;
+    border: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+  }
+}
+
+.projectsPage{
+  justify-content: center;
+}
+
+@media (max-width: 1440px) {
+  .robot-spline{
+    right: -20rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .robot-spline{
+    right: -38rem;
+  }
+}

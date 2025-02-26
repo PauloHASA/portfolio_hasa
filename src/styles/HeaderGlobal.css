@@ -1,0 +1,115 @@
+.header-landingPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.header-landingPage h1 {
+  font-family: var(--font-text);
+  color: var(--white);
+}
+
+.change-language {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+.change-language button {
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+
+.change-language button:nth-child(1) {
+  width: 30px;
+  height: 30px;
+}
+
+.change-language button img {
+  width: 100%;
+  height: auto;
+
+}
+
+
+.icons-socialmedia {
+  display: flex;
+  align-items: center;
+  gap: var(--24px);
+
+  color: var(--white);
+
+}
+
+.icons-socialmedia a i {
+  font-size: 1rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+
+.icons-socialmedia a:hover,
+.change-language button:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icons-socialmedia a:hover .bi-github {
+  /* Preto do GitHub */
+}
+
+.icons-socialmedia a:hover .bi-linkedin {
+  color: #0A66C2;
+  /* Azul do LinkedIn */
+}
+
+.icons-socialmedia a:hover .bi-envelope-arrow-up-fill {
+  color: #EA4335;
+}
+
+.icons-socialmedia a:hover .bi-whatsapp {
+  color: #25D366;
+  /* Verde do WhatsApp */
+}
+
+.headerClean{
+  padding: 24px;
+}
+
+.header-landingPage{
+  section.section-HeaderGlobal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    nav{
+      display: flex;
+      gap: 2rem;
+
+      a{
+        text-decoration: none;
+        font-family: var(--font-text);
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      a:hover{
+        font-size: 1.2rem;
+        border-bottom: 2px solid var(--highlight-color);
+      }
+    }
+  }
+}
+
+.header-landingPage{
+  
+}
