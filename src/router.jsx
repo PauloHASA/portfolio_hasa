@@ -14,10 +14,10 @@ function AppRouter() {
   return(
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/project" element={<Project />} />
+        <Route path="/portfolio_hasa" element={<LandingPage />} />
+        <Route path="/portfolio_hasa/about" element={<About />} />
+        <Route path="/portfolio_hasa/contact" element={<Contact />} />
+        <Route path="/portfolio_hasa/project" element={<Project />} />
       </Routes>
     </Router>
   );
